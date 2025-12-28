@@ -56,6 +56,7 @@ public:
 class BurgerFactory {
 public:
     virtual Burger* createBurger(string& type) = 0;
+    virtual ~BurgerFactory(){};
 };
 
 class SinghBurger : public BurgerFactory {
