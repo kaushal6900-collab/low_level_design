@@ -11,7 +11,7 @@ private:
     }
 
 public:
-    static Singleton* getInstance() {
+    static Singleton* getInstance() {  //static is used to call method without object (which is not yet created)
         if(instance == nullptr) {
             instance = new Singleton();
         }
